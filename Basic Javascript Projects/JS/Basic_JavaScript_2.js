@@ -7,5 +7,5 @@ function My_First_Function() {
 function myFunction() {
     var sentence = "I am learning";
     sentence += " a lot from this book!";
-    document.getElementById("concatenate").innerHTML = sentence;
+    document.getElementById("Concatenate").innerHTML = sentence;
 }
