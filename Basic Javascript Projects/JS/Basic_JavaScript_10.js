@@ -44,3 +44,15 @@ function let_func() {
     }
     document.write("<br>" + x)
 }
+
+function let_object_func() {
+    let dog = {
+        breed: "Pitbull",
+        color: "brown and white ",
+        size: "large ",
+        description : function() {
+            return "The dog is a " + this.size + this.color + this.breed + ".";
+        }
+    }
+    document.getElementById("let_object").innerHTML = dog.description();
+}
