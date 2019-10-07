@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Calculator</title>
+    <meta name="description" content="A basic HTML, CSS, and JavaScript Calculator">
+    <meta name="author" content="Ethan Buss">
+
+    <link rel="stylesheet" href="../CSS/calculator_css.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" value="0" disabled />
+        <div class="calculator-keys">
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" value="7">7</button>
+                    </td>
+                    <td>
+                        <button type="button" value="8">8</button>
+                    </td>
+                    <td>
+                        <button type="button" value="9">9</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" id="allClear" class="all-clear function" value="all-clear">AC</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" value="4">4</button>
+                    </td>
+                    <td>
+                        <button type="button" value="5">5</button>
+                    </td>
+                    <td>
+                        <button type="button" value="6">6</button>
+                    </td>
+                    <td>
+                        <button type="button" class="operator" value="-">-</button>
+                    </td>
+                    <td>
+                        <button type="button" class="operator" value="+">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" value="1">1</button>
+                    </td>
+                    <td>
+                        <button type="button" value="2">2</button>
+                    </td>
+                    <td>
+                        <button type="button" value="3">3</button>
+                    </td>
+                    <td>
+                        <button type="button" class="operator" value="*">&times;</button>
+                    </td>
+                    <td>
+                        <button type="button" class="operator" value="/">&divide;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" id="zero" value="0">0</button>
+                    </td>
+                    <td>
+                        <button type="button" class="decimal function" value=".">.</button>
+                    </td>
+                    <td colspan="2">
+                        <button type="button" id="equals" class="equal-sign operator" value="=">=</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="../JS/calculator_JS.js"></script>
+
+</body>
+
+</html>
