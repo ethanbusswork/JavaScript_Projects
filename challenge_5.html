@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./CSS/challenge_5.css">
+</head>
+
+<body>
+
+    <div id="welcome">
+        <h2>Click the button to open the login portal</h2>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Login Portal</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Login Portal</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="example@email.com" name="email" required>
+
+            <label for="password"><b>Passowrd</b></label>
+            <input type="text" placeholder="p@$$W0rD" name="password" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </form>
+    </div>
+
+    <script src="./JS/challenge_5.js">
+    </script>
+
+</body>
+
+</html>

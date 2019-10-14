@@ -1,0 +1,21 @@
+.form {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15%;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    height: 200px;
+    width: 325px;
+}
+
+.submitBtn {
+    border-radius: 10px;
+    height: 30px;
+}
+
+.input {
+    border-radius: 5px;
+    height: 30px;
+    font-size: 25px;
+}

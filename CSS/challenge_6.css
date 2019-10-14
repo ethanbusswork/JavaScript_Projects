@@ -1,0 +1,19 @@
+div {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    animation: blueMove 5s infinite;
+}
+
+@keyframes blueMove {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+    to {
+        top: 500px;
+        left: 500px;
+    }
+}

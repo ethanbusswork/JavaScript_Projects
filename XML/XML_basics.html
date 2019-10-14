@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+    <p id="XML_Example"></p>
+
+    <script>
+        var XML_Parser, XML_Document;
+
+        //Creates text string
+        var Politics = "<politics>" +
+            "<title>Current President: </title>" +
+            "<Cur_pres>Donald J. Trump</Cur_pres>" +
+            "</politics>";
+
+        // creates XML DOM parser
+        XML_Parser = new DOMParser();
+
+        // creates a new XML DOM object using text string
+        XML_Document = XML_Parser.parseFromString(Politics, "text/xml");
+
+        document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("Cur_pres")[0].childNodes[0].nodeValue;
+    </script>
+
+</body>
+
+</html>
